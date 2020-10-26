@@ -6,6 +6,46 @@ public class ControladorAeri {
     private ArrayList<Avio> espai_aeri;
     private Scanner sc = new Scanner(System.in);
 
+    private void mainMenu(){
+        int seleccio = 0;
+        String matricula;
+        while(seleccio!=6){
+            System.out.println("Selecciona que vols fer: ");
+            System.out.println("1. Afegir un avió a l'espai Aeri");
+            System.out.println("2. Gestionar un avió de l'espai Aeri");
+            System.out.println("3. Mostrar l'espai aeri actual");
+            System.out.println("4. Xifrar els avions de combat");
+            System.out.println("5. Desxifrar els avions de combat");
+            System.out.println("6. Sortir");
+            seleccio = sc.nextInt();
+            switch(seleccio){
+                case 1:
+                    afegirAvio();
+                    break;
+                case 2:
+                    System.out.println("Introdueix la matricula de l'avió que vols analitzar: ");
+                    matricula = sc.next();
+                    gestionarAvio(matricula);
+                    break;
+                case 3:
+                    mostrarAvions();
+                    break;
+                case 4:
+                    System.out.println("Introdueix la matricula de l'avió que vols xifrar: ");
+                    matricula = sc.next();
+                    xifrarAvioCombat(matricula);
+                    break;
+                case 5:
+                    System.out.println("Introdueix la matricula de l'avió que vols desxifrar: ");
+                    matricula = sc.next();
+                    desxifrarAvioCombat(matricula);
+                    break;
+            }
+        }
+
+
+    }
+
     //Done
     public void afegirAvio(){
         Avio avio;
@@ -14,33 +54,38 @@ public class ControladorAeri {
     }
 
     public void gestionarAvio(String matricula){
-        Avio avio = trobarAvio(matricula);
-        int opcio;
-        System.out.println("Selecciona que vols gestionar: ");
-        System.out.println("1. Encendre o apagar motor ");
-        System.out.println("2. Accelerar o frenar ");
-        System.out.println("3. Pujar tren d'aterratge o baixar-lo");
-        System.out.println("4. Establir rumb ");
-        System.out.println("5. Obtenir l'estat de l'avió");
-        opcio = sc.nextInt();
+        try{
+            Avio avio = trobarAvio(matricula);
+            int opcio;
+            System.out.println("Selecciona que vols gestionar: ");
+            System.out.println("1. Encendre o apagar motor ");
+            System.out.println("2. Accelerar o frenar ");
+            System.out.println("3. Pujar tren d'aterratge o baixar-lo");
+            System.out.println("4. Establir rumb ");
+            System.out.println("5. Obtenir l'estat de l'avió");
+            opcio = sc.nextInt();
 
-        switch (opcio){
-            case 1:
-                cambiarEstatMotors(avio);
-                break;
-            case 2:
-                accelerarFrenar(avio);
-                break;
-            case 3:
-                cambiarEstatTrenAterratge(avio);
-                break;
-            case 4:
-                establirRumb(avio);
-                break;
-            case 5:
-                System.out.println("L'estat de l'avió és bo");
-                break;
+            switch (opcio){
+                case 1:
+                    cambiarEstatMotors(avio);
+                    break;
+                case 2:
+                    accelerarFrenar(avio);
+                    break;
+                case 3:
+                    cambiarEstatTrenAterratge(avio);
+                    break;
+                case 4:
+                    establirRumb(avio);
+                    break;
+                case 5:
+                    System.out.println("L'estat de l'avió és bo");
+                    break;
+            }
+        }catch(Exception e){
+            System.out.println("No existeix l'avió");
         }
+
     }
 
     public void mostrarAvions(){
@@ -49,11 +94,11 @@ public class ControladorAeri {
         }
     }
 
-    public void xifrarAvioCombat(String nom){
+    public void xifrarAvioCombat(String matricula){
 
     }
 
-    public void desxifrarAvioCombat(String nom){
+    public void desxifrarAvioCombat(String matricula){
 
     }
 

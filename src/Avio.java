@@ -9,7 +9,8 @@ public class Avio {
     private Coordenada coordenades;
     private int autonomia;
     private int rumb;
-
+    private boolean tren_aterratge = true;
+    private int velocitat = 0;
     private boolean estat_motors = false;
 
     public boolean isTren_aterratge() {
@@ -20,8 +21,7 @@ public class Avio {
         this.tren_aterratge = tren_aterratge;
     }
 
-    private boolean tren_aterratge = true;
-    private int velocitat = 0;
+
 
     public boolean isEstat_motors() {
         return estat_motors;
