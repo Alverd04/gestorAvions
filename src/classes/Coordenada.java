@@ -1,3 +1,5 @@
+package classes;
+
 public class Coordenada {
 
     private int x;

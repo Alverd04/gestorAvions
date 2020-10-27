@@ -1,3 +1,5 @@
+import classes.ControladorAeri;
+
 import java.util.Scanner;
 
 public class MainClass {
@@ -14,23 +16,15 @@ public class MainClass {
         int seleccio;
         System.out.println("Selecciona que vols fer: ");
         System.out.println("1. Controlador aeri");
-        System.out.println("2. Avió");
-        System.out.println("3. Sortir");
+        System.out.println("2. Sortir");
         seleccio = sc.nextInt();
 
-        while(seleccio != 3){
-            switch(seleccio){
+        while(seleccio != 2){
+            switch(seleccio) {
                 case 1:
-                    break;
-                case 2:
-                    String matricula;
-                    System.out.println("Introdueix la matricula de l'avió que vols analitzar: ");
-                    matricula = sc.next();
-                    ca.gestionarAvio(matricula);
+                    ca.mainMenu();
                     break;
             }
         }
-
-
     }
 }

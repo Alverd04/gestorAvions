@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4d55b85-ef27-4735-bfbf-b952cffe10ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/TorreControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Avio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AvioMilitar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ControladorAeri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControladorAeri.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestorAvions/Avio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestorAvions/ControladorAeri.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestorAvions/Coordenada.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestorAvions/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestorAvions/MainClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Avio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Avio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ControladorAeri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ControladorAeri.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Coordenada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Coordenada.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +90,9 @@
       <workItem from="1603630739578" duration="758000" />
       <workItem from="1603647383242" duration="374000" />
       <workItem from="1603649532307" duration="10000" />
-      <workItem from="1603731610765" duration="1315000" />
+      <workItem from="1603731610765" duration="2198000" />
+      <workItem from="1603789686812" duration="43000" />
+      <workItem from="1603816708304" duration="1538000" />
     </task>
     <servers />
   </component>
@@ -102,26 +108,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603624149536" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603636877248">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603818246665">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603636877248" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603636877248">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603818246665" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603818246665">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603636877248" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603636877248">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603818246665" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603818246665">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603636877248" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603636877248">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603818246665" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603818246665">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603636877248" />
-    <state x="656" y="358" key="com.intellij.ide.util.TipDialog" timestamp="1603649535217">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603818246665" />
+    <state x="656" y="358" key="com.intellij.ide.util.TipDialog" timestamp="1603789689653">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603630739418" />
-    <state x="656" y="358" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1603649535217" />
+    <state x="656" y="358" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1603789689653" />
+    <state x="702" y="140" key="refactoring.ChangeSignatureDialog" timestamp="1603817946003">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="702" y="140" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603817946003" />
   </component>
 </project>

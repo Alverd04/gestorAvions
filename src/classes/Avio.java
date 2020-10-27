@@ -1,4 +1,10 @@
+package classes;
+
+import java.util.Scanner;
+
 public class Avio {
+
+    private Scanner sc = new Scanner(System.in);
     private String matricula;
     private String marca;
     private String model;
@@ -13,6 +19,76 @@ public class Avio {
     private int velocitat = 0;
     private boolean estat_motors = false;
 
+
+    //Constructors
+
+    public Avio(){}
+
+    public Avio(String matricula, String marca, String model, int capacitat_passatgers) {
+        this.matricula = matricula;
+        this.marca = marca;
+        this.model = model;
+        this.capacitat_passatgers = capacitat_passatgers;
+        this.coordenades = new Coordenada(100,100,0);
+    }
+
+    // Mètodes de manipulació de l'avió
+
+
+    public void variarVelocitat(){
+        int variació;
+        int seleccio;
+        System.out.println("La velocitat actual és " + this.getVelocitat() + "km/h");
+        System.out.println("1. Accelerar");
+        System.out.println("2. Frenar");
+        seleccio = sc.nextInt();
+        switch(seleccio){
+            case 1:
+                System.out.println("Quant vols augmentar?");
+                variació = sc.nextInt();
+                this.setVelocitat(this.getVelocitat()+variació);
+                System.out.println("La velocitat actual és " + this.getVelocitat() + "km/h");
+                break;
+            case 2:
+                System.out.println("Quant vols reduir?");
+                variació = sc.nextInt();
+                this.setVelocitat(this.getVelocitat()+variació);
+                System.out.println("La velocitat actual és " + this.getVelocitat() + "km/h");
+                break;
+        }
+    }
+
+    public void cambiarEstatMotor(){
+        if(this.isEstat_motors() == true){
+            this.setEstat_motors(false);
+            System.out.println("Els motors ara estan apagats");
+        }
+        else{
+            this.setEstat_motors(true);
+            System.out.println("Els motors ara estan encesos");
+        }
+    }
+
+    public void cambiarEstatTrenAterratge(){
+        if(this.isTren_aterratge() == true){
+            this.setTren_aterratge(false);
+            System.out.println("El tren d'aterratge ara esta baixat");
+        }
+        else{
+            this.setTren_aterratge(true);
+            System.out.println("El tren d'aterratge ara esta pujat");
+        }
+    }
+
+    public void establirRumb(){
+        int rumb;
+        System.out.println("Quin rumb vols definir?");
+        rumb = sc.nextInt();
+        this.setRumb(rumb);
+    }
+
+    // Getters i setters
+
     public boolean isTren_aterratge() {
         return tren_aterratge;
     }
@@ -20,8 +96,6 @@ public class Avio {
     public void setTren_aterratge(boolean tren_aterratge) {
         this.tren_aterratge = tren_aterratge;
     }
-
-
 
     public boolean isEstat_motors() {
         return estat_motors;
@@ -37,19 +111,6 @@ public class Avio {
 
     public void setVelocitat(int velocitat) {
         this.velocitat = velocitat;
-    }
-
-    public Avio(String matricula, String marca, String model, int capacitat_passatgers, int tripulants, String origen, String destí, Coordenada coordenades, int autonomia, int rumb) {
-        this.matricula = matricula;
-        this.marca = marca;
-        this.model = model;
-        this.capacitat_passatgers = capacitat_passatgers;
-        this.tripulants = tripulants;
-        this.origen = origen;
-        this.destí = destí;
-        this.coordenades = coordenades;
-        this.autonomia = autonomia;
-        this.rumb = rumb;
     }
 
     public String getMatricula() {
