@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4d55b85-ef27-4735-bfbf-b952cffe10ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/services/TorreControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestorAvions/Avio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestorAvions/ControladorAeri.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestorAvions/Coordenada.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestorAvions/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestorAvions/MainClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Avio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Avio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ControladorAeri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ControladorAeri.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Coordenada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Coordenada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +84,7 @@
       <workItem from="1603731610765" duration="2198000" />
       <workItem from="1603789686812" duration="43000" />
       <workItem from="1603816708304" duration="1538000" />
+      <workItem from="1603818261032" duration="69000" />
     </task>
     <servers />
   </component>
